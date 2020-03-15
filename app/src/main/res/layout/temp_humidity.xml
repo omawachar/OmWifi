@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/edit_contac_layout" android:background="@drawable/card_background" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/leftPerple" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Port" android:layout_weight="0.5" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/leftPerple" android:textColorHint="#ffd0a8dd" android:id="@+id/port" android:background="@android:color/transparent" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="4200" android:layout_weight="0.5" android:textCursorDrawable="@drawable/edit_text_cursor" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@+id/btn_cancel" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Cancel" android:layout_weight="0.5" />
+        <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@+id/btn_save" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Save" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

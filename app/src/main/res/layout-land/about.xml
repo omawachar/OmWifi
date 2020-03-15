@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/about" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/dedofi_logo"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="30dp" android:textStyle="bold" android:textColor="@color/leftPerple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DedoFI"/>
+                    <TextView android:textColor="@color/leftPerple" android:id="@+id/version" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textColor="@color/leftPerple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Developer : Madhura Wanniarachchi"/>
+                    <TextView android:textColor="@color/leftPerple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email : wam.prasanna@gmail.com"/>
+                    <TextView android:textColor="@color/leftPerple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Country : Sri Lanka"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/anim" android:layout_width="70dp" android:layout_height="70dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

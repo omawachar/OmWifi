@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/leftPerple" android:gravity="center_vertical" android:id="@+id/txt_name" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Name" android:layout_weight="0.5" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:weightSum="1.0">
+        <RelativeLayout android:layout_width="40.0dip" android:layout_height="40.0dip">
+            <ImageView android:id="@+id/img_is_enable" android:background="@drawable/gray_orvel" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/timer_icon" />
+            <Button android:id="@+id/btn_enable" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_weight="1.0">
+            <Button android:textSize="20.0sp" android:textColor="@color/leftPerple" android:id="@+id/on_time" android:background="@null" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:text="10:32pm" android:layout_weight="0.5" />
+            <Button android:textSize="20.0sp" android:textColor="@color/leftPerple" android:id="@+id/off_time" android:background="@null" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:text="10:32pm" android:layout_weight="0.5" />
+        </LinearLayout>
+        <RelativeLayout android:visibility="visible" android:layout_width="40.0dip" android:layout_height="wrap_content">
+            <Button android:id="@+id/show_days" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@+id/arrow_up" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/down_arrow" />
+            <ImageView android:id="@+id/arrow_down" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/down_arrow" android:rotation="180.0" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/days_wrapper" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="70.0dip" android:weightSum="7.0">
+        <RelativeLayout android:gravity="center" android:id="@+id/monday" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/txt_monday" android:background="@drawable/perple_orvel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="M" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/tuesday" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/txt_tuesday" android:background="@drawable/perple_orvel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="T" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/wendnesday" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/txt_wendnesday" android:background="@drawable/perple_orvel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="W" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/thursday" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/txt_thursday" android:background="@drawable/perple_orvel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="T" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/friday" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/txt_friday" android:background="@drawable/perple_orvel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="F" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/saturday" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/txt_saturday" android:background="@drawable/perple_orvel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="S" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/sunday" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/txt_sunday" android:background="@drawable/perple_orvel" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="S" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="32.0dip">
+        <Button android:textSize="16.0sp" android:textColor="@color/leftPerple" android:id="@+id/delete" android:background="@null" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="-5.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" android:text="Delete" android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

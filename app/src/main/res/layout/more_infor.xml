@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/main" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/help_icon" />
+                <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/leftPerple" android:gravity="center|left" android:id="@+id/btn_help" android:background="@null" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_button" android:textAllCaps="false" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/about_icon" />
+                <Button android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/leftPerple" android:gravity="center|left" android:id="@+id/btn_about" android:background="@null" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_button" android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="ca-app-pub-3940256099942544/6300978111" xmlns:ads="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

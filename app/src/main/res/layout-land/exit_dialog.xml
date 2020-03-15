@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:background="#fff" android:layout_width="320dp" android:layout_height="wrap_content">
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:adSize="BANNER" app:adUnitId="ca-app-pub-3929403241268698/6179264611"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/leftPerple" android:gravity="center" android:id="@+id/txt_confirm" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Are you sure you want to exit?"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <Button android:textSize="16sp" android:textColor="#fff" android:id="@+id/btn_no" android:background="@drawable/border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2dp" android:text="no" android:layout_weight="0.5"/>
+        <Button android:textSize="16sp" android:textColor="#fff" android:id="@+id/btn_yes" android:background="@drawable/border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="2dp" android:text="yes" android:layout_weight="0.5"/>
+    </LinearLayout>
+</LinearLayout>

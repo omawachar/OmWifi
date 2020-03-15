@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\dedofi\\HomeAutomation(Dedofi)\\HomeAutomation(Dedofi)\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-2\\files-2.1\\09884e4f09dcb45cba6db7aeffefa6be\\material-1.1.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,177",
+                        "endColumns": "121,133",
+                        "endOffsets": "172,306"
+                    },
+                    "to": {
+                        "startLines": "11,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "686,808",
+                        "endColumns": "121,133",
+                        "endOffsets": "803,937"
+                    }
+                },
+                {
+                    "source": "D:\\dedofi\\HomeAutomation(Dedofi)\\HomeAutomation(Dedofi)\\app\\src\\main\\res\\values-large\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "57,117,178,239,299,359,417",
+                        "endColumns": "58,59,59,58,58,56,56",
+                        "endOffsets": "111,172,233,293,353,411,469"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,174,234,293,352,409",
+                        "endColumns": "58,59,59,58,58,56,56",
+                        "endOffsets": "109,169,229,288,347,404,461"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\asus\\.gradle\\caches\\transforms-2\\files-2.1\\72755d8593c3ca1ed00b11907b10c688\\appcompat-1.1.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "9,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "532,636",
+                        "endColumns": "103,115",
+                        "endOffsets": "631,747"
+                    },
+                    "to": {
+                        "startLines": "9,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "466,570",
+                        "endColumns": "103,115",
+                        "endOffsets": "565,681"
+                    }
+                }
+            ]
+        }
+    ]
+}

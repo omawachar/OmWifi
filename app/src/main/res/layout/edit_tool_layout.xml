@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_contac_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:padding="4.0dip">
+
+    <LinearLayout
+        android:id="@+id/tuggle_wraper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/btn_switch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5.0dip"
+            android:text="Device"
+            android:textColor="@color/leftPerple"
+            android:textSize="16.0sp"
+            android:theme="@style/SCBSwitch"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textColor="@color/leftPerple"
+            android:textSize="16.0sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:hint="Television"
+            android:inputType="text"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:textColor="@color/leftPerple"
+            android:textColorHint="#ffd0a8dd"
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:textSize="16.0sp"
+            android:theme="@style/AppTheme" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/local_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/ip_port"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5.0dip"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/txt_ip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="IP Address"
+                    android:textColor="@color/leftPerple"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/ip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789."
+                    android:hint="192.168.1.100"
+                    android:inputType="numberDecimal"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:textColor="@color/leftPerple"
+                    android:textColorHint="#ffd0a8dd"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                    android:textSize="16.0sp"
+                    android:theme="@style/AppTheme" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5.0dip"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/txt_port"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="Port"
+                    android:textColor="@color/leftPerple"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/port"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:hint="9600"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:textColor="@color/leftPerple"
+                    android:textColorHint="#ffd0a8dd"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                    android:textSize="16.0sp"
+                    android:theme="@style/AppTheme" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5.0dip"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/txt_on_code"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="On Code"
+                android:textColor="@color/leftPerple"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@+id/on_code"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:hint="tvon"
+                android:inputType="text"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:textColor="@color/leftPerple"
+                android:textColorHint="#ffd0a8dd"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="16.0sp"
+                android:theme="@style/AppTheme" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5.0dip"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/txt_off_code"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="Off Code"
+                android:textColor="@color/leftPerple"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@+id/off_code"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:hint="tvoff"
+                android:inputType="text"
+                android:maxLength="8"
+                android:maxLines="1"
+                android:textColor="@color/leftPerple"
+                android:textColorHint="#ffd0a8dd"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="16.0sp"
+                android:theme="@style/AppTheme" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thingspeak_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5.0dip"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/txt_api_key"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="Read API Key"
+                    android:textColor="@color/leftPerple"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/read_api_key"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:hint="ETNFJ6T598SBGZ78"
+                    android:maxLines="1"
+                    android:textColor="@color/leftPerple"
+                    android:textColorHint="#ffd0a8dd"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                    android:textSize="16.0sp"
+                    android:theme="@style/AppTheme" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5.0dip"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/txt_c_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center_vertical"
+                    android:text="Channel ID"
+                    android:textColor="@color/leftPerple"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/channel_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:background="@android:color/transparent"
+                    android:hint="899051"
+                    android:inputType="number"
+                    android:textColor="@color/leftPerple"
+                    android:textColorHint="#ffd0a8dd"
+                    android:textCursorDrawable="@drawable/edit_text_cursor"
+                    android:textSize="16.0sp"
+                    android:theme="@style/AppTheme" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5.0dip"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/txt_field_no"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="Field Number"
+                android:textColor="@color/leftPerple"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@+id/field_no"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@android:color/transparent"
+                android:hint="1"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/leftPerple"
+                android:textColorHint="#ffd0a8dd"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="16.0sp"
+                android:theme="@style/AppTheme" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/unit_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginBottom="5.0dip" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/edit_tool"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="0.5"
+            android:background="@drawable/border"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="0.5"
+            android:background="@drawable/border"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+</LinearLayout>

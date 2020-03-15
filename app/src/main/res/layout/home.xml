@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whiteLevel1"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_weight="0.5"
+            android:gravity="center|left">
+
+            <ImageView
+                android:layout_width="22.0dip"
+                android:layout_height="22.0dip"
+                android:src="@drawable/menu" />
+
+            <Button
+                android:id="@+id/more_info"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_marginLeft="-5.0dip"
+                android:layout_marginTop="-5.0dip"
+                android:layout_marginRight="-5.0dip"
+                android:layout_marginBottom="-5.0dip"
+                android:background="@null"
+                android:padding="0.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20.0dip"
+            android:layout_weight="0.5"
+            android:gravity="center|right">
+
+            <ImageView
+                android:layout_width="22.0dip"
+                android:layout_height="22.0dip"
+                android:src="@drawable/plus" />
+
+            <Button
+                android:id="@+id/add_tool"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_marginLeft="-5.0dip"
+                android:layout_marginTop="-5.0dip"
+                android:layout_marginRight="-5.0dip"
+                android:layout_marginBottom="-5.0dip"
+                android:background="@null"
+                android:padding="0.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/sepereter_bg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/component_wrapper"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1.0">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="100.0dip"
+                android:text="24 devices are power up of 56 decice" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:paddingTop="35.0dip"
+                android:src="@drawable/home"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10.0dip"
+            android:paddingBottom="20.0dip"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/all_device_run"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Running"
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_all_device_running"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 Devices"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="3.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20.0dip"
+                android:background="#ff8052aa" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/all_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Devices"
+                    android:textColor="#ffffffff"
+                    android:textSize="20.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_all_device"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45 Devices"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/notify_connect"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10.0dip"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:src="@drawable/connect" />
+
+            <Button
+                android:id="@+id/btn_connect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/block_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:padding="5.0dip"
+            android:scrollbars="vertical"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/no_data_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="170.0dip"
+                android:layout_height="170.0dip"
+                android:src="@drawable/dedofi_logo_alpha" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Data to Show"
+                android:textColor="#ffd3badb"
+                android:textSize="20.0sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

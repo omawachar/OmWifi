@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/block_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffffff"
+    app:cardElevation="4.0dip"
+    android:layout_gravity="center"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6.0dip"
+        android:background="@drawable/card_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="25.0dip"
+        android:paddingTop="10.0dip"
+        android:paddingRight="25.0dip"
+        android:paddingBottom="10.0dip">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4.0dip"
+            android:paddingBottom="4.0dip"
+            android:text="Living Room"
+            android:gravity="center"
+            android:textColor="@color/leftPerple" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/livingroom" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

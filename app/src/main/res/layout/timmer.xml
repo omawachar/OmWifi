@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/toolBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:weightSum="1.0">
+        <RelativeLayout android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="0.5">
+            <ImageView android:clickable="false" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/menu" />
+            <Button android:id="@+id/open_drawer" android:background="@null" android:padding="0.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="-5.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="0.5">
+            <ImageView android:clickable="false" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/plus" />
+            <Button android:id="@+id/add_timer" android:background="@null" android:padding="0.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="-5.0dip" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:layout_marginBottom="-5.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/body" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/timer_list" android:padding="5.0dip" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/no_data_logo" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="170.0dip" android:layout_height="170.0dip" android:src="@drawable/dedofi_logo_alpha" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffd3badb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No Data to Show" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

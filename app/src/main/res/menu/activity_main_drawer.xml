@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/cogwheel"
+            android:title="Settings" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/info"
+            android:title="Help"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/remove_ads"
+            android:icon="@drawable/premium_badge"
+            android:title="Remove Ads"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ship"
+            android:title="About"
+            android:visible="false"
+            />
+    </group>
+</menu>

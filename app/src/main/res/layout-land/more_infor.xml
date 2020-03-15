@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/main" android:paddingLeft="10dp" android:paddingTop="20dp" android:paddingRight="10dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/help_icon"/>
+                <Button android:textSize="16sp" android:textStyle="bold" android:textColor="@color/leftPerple" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btn_help" android:background="@null" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="20dp" android:text="@string/help_button" android:textAllCaps="false"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/about_icon"/>
+                <Button android:textSize="16sp" android:textStyle="bold" android:textColor="@color/leftPerple" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btn_about" android:background="@null" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="20dp" android:text="@string/about_button" android:textAllCaps="false"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/leftPerple" android:layout_gravity="left|center_vertical|center_horizontal|center" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connect First"/>
+                        <RelativeLayout android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/tugle_on" android:visibility="visible" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/tugle_on"/>
+                            <ImageView android:id="@+id/tugle_off" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/tugle_off"/>
+                            <Button android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_tugle" android:background="@null" android:layout_width="60dp" android:layout_height="60dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="50dp">
+                    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="@color/leftPerple" android:id="@+id/tugle_instruction" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/connect_first"/>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/about" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="right" android:paddingTop="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button android:id="@+id/close_about" android:background="@drawable/close" android:layout_width="22dp" android:layout_height="22dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/dedofi_logo"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="40dp" android:textStyle="bold" android:textColor="@color/leftPerple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DedoFI"/>
+                        <TextView android:textColor="@color/leftPerple" android:id="@+id/version" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:textColor="@color/leftPerple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Developer : Madhura Wanniarachchi"/>
+                        <TextView android:textColor="@color/leftPerple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email : wam.prasanna@gmail.com"/>
+                        <TextView android:textColor="@color/leftPerple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Country : Sri Lanka"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/anim" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="10dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/help" android:background="#f8f8f8" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="left" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/close_help" android:background="@drawable/left_arrow" android:layout_width="22dp" android:layout_height="22dp"/>
+            </LinearLayout>
+            <RelativeLayout android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipeContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView android:id="@+id/adView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:adSize="BANNER" app:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+</RelativeLayout>
