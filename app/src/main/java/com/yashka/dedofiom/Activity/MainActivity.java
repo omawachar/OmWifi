@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     /* access modifiers changed from: private */
     public static TCPClient mTcpClient;
     private static int portNumber;
+    /*test*/
 //    AcknowledgePurchaseResponseListener acknowledgePurchaseResponseListener = new AcknowledgePurchaseResponseListener() {
 //        public void onAcknowledgePurchaseResponse(BillingResult billingResult) {
 //            if (billingResult.getResponseCode() == 0) {
